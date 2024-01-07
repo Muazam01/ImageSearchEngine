@@ -19,6 +19,7 @@ const searchImages=async()=>{
     const results=data.results
     results.map((result)=>{
         const image=document.createElement('img')
+        image.className='image'
         image.src=result.urls.small
         const imageLink=document.createElement('a')
         imageLink.href=result.links.html
